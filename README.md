@@ -55,9 +55,13 @@ An IoT-powered RFID payment and monitoring system designed for university shuttl
 
 ## 📁 Project Structure
 📁 src/ 
+
 ├── main.ino # Main Arduino/ESP32 logic 
+
 ├── firebaseConfig.h # Firebase credentials (secured) 
+
 ├── functions/ # Payment, scanning, LCD display, keypad input 
+
 └── assets/ # Images, diagrams, circuit layout
 
 ---
