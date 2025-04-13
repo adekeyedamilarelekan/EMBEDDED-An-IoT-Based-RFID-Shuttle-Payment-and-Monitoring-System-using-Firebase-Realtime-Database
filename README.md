@@ -31,7 +31,7 @@ An IoT-powered RFID payment and monitoring system designed for university shuttl
 - Charging Module with LCD  
 - Type-C Charging Port  
 - ON/OFF Switch
-- 
+ 
 ---
 
 ## 🔧 How It Works
