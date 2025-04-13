@@ -49,21 +49,9 @@ An IoT-powered RFID payment and monitoring system designed for university shuttl
 ## 📽️ Demo Video
 
 🎥 **Watch it in action on YouTube**:  
-👉 [Click here to watch the full demo](https://youtu.be/your-video-link)
+👉 [Click here to watch the full demo](https://www.youtube.com/watch?v=3elCyCiH2AM)
 
 ---
 
-## 📁 Project Structure
-📁 src/ 
-
-├── main.ino # Main Arduino/ESP32 logic 
-
-├── firebaseConfig.h # Firebase credentials (secured) 
-
-├── functions/ # Payment, scanning, LCD display, keypad input 
-
-└── assets/ # Images, diagrams, circuit layout
-
----
 
 
