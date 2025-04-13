@@ -10,22 +10,13 @@
 #define SS_PIN 5
 #define RST_PIN 0
 
-
-// /* 1. Define the WiFi credentials */
-// #define WIFI_SSID "Deewan"
-// #define WIFI_PASSWORD "vvvvgggg"
-
-// /* 1. Define the WiFi credentials */
-// #define WIFI_SSID "Airtel_X25A_197F"
-// #define WIFI_PASSWORD "F270F827"
-
 /* 1. Define the WiFi credentials */
-#define WIFI_SSID "Network_Connect"
-#define WIFI_PASSWORD "vvvvvvvv"
+#define WIFI_SSID "N**************t"
+#define WIFI_PASSWORD "vv*****vv"
 
 // Mailjet API credentials
-const char* apiKey = "94905f636c3fa89c7b0dee62b9b8967c";
-const char* secretKey = "0b397acc653cdb418d5eef815abbb60a";
+const char* apiKey = "949************************b8967c";
+const char* secretKey = "0b397*********************bbb60a";
 const char* senderEmail = "rfidprojectokoro@gmail.com";  // e.g., yourname@yourdomain.com
 
 
@@ -36,16 +27,12 @@ const char* senderEmail = "rfidprojectokoro@gmail.com";  // e.g., yourname@yourd
 #define WiFi_Led 13
 MFRC522 mfrc522(SS_PIN, RST_PIN);  // Create MFRC522 instance.
 
-
-
 LiquidCrystal_I2C lcd(0x27, 20, 4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 
 // Define Firebase Data object
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
-
-
 
 const byte ROWS = 4;  //four rows
 const byte COLS = 4;  //four columns
@@ -95,7 +82,7 @@ void setup() {
   lcd.setCursor(0, 1);
   lcd.print("-TING SYSTEM IN THE ");
   lcd.setCursor(0, 2);
-  lcd.print("COVENANT UNIVERSITY ");
+  lcd.print("******** UNIVERSITY ");
   lcd.setCursor(0, 3);
   lcd.print("SHUTTLE SERVICES.   ");
   delay(5000);
@@ -139,7 +126,7 @@ void setup() {
 
   // Or use legacy authenticate method
   config.database_url = "https://rfidtagpaymentproject-default-rtdb.firebaseio.com";
-  config.signer.tokens.legacy_token = "ARaRzz1UTSgtatGcCGr93gkzyB6KCiOGL0WZttf0";
+  config.signer.tokens.legacy_token = "ARaRz*********************************f0";
 
   //Network reconnect timeout (interval) in ms (10 sec - 5 min) when network or WiFi disconnected.
   config.timeout.networkReconnect = 10 * 1000;
@@ -354,12 +341,6 @@ void proceedToScanCardForCardInfo() {
 }
 
 void showHomePage() {
-  // lcd.setCursor(0, 0);
-  // lcd.print("_CU Shuttle Payment_");
-  // lcd.setCursor(0, 2);
-  // lcd.print("* = Make Payment");
-  // lcd.setCursor(0, 3);
-  // lcd.print("A = Card Information");
   lcd.setCursor(0, 0);
   lcd.print("* = Make Payment");
   lcd.setCursor(0, 2);
@@ -486,7 +467,7 @@ String readStudentByUID(const String& targetUID) {
     if (driverJson.get(driverResult, "Driver Name")) {
       Serial.println("Driver Name: " + driverResult.to<String>());
       Driver_Name = "";
-      Driver_Name = "CU Shuttle Driver: " + driverResult.to<String>();
+      Driver_Name = "** Shuttle Driver: " + driverResult.to<String>();
     }
     if (driverJson.get(driverResult, "Driver Email")) {
       Serial.println("Driver Email: " + driverResult.to<String>());
