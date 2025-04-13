@@ -30,12 +30,35 @@ An IoT-powered RFID payment and monitoring system designed for university shuttl
 - Boost Converter (XL6019)  
 - Charging Module with LCD  
 - Type-C Charging Port  
-- ON/OFF Switch  
+- ON/OFF Switch
+- 
+---
+
+## 🔧 How It Works
+
+### 🏠 Homepage Options on LCD:
+- **A: Card Information**  
+  Displays name, current balance, previous balance, and last fare.
+
+- **\*: Make Payment**  
+  Prompts for fare entry, confirms payment with `#`, clears with `C`, cancels with `D`.  
+  Checks if balance ≥ fare, deducts from Firebase, and sends an email notification.
+
+---
+
+## 📽️ Demo Video
+
+🎥 **Watch it in action on YouTube**:  
+👉 [Click here to watch the full demo](https://youtu.be/your-video-link)
 
 ---
 
 ## 📁 Project Structure
-📁 src/ ├── main.ino # Main Arduino/ESP32 logic ├── firebaseConfig.h # Firebase credentials (secured) ├── functions/ # Payment, scanning, LCD display, keypad input └── assets/ # Images, diagrams, circuit layout
+📁 src/ 
+├── main.ino # Main Arduino/ESP32 logic 
+├── firebaseConfig.h # Firebase credentials (secured) 
+├── functions/ # Payment, scanning, LCD display, keypad input 
+└── assets/ # Images, diagrams, circuit layout
 
 ---
 
